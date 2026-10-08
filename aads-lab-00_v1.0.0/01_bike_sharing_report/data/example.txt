@@ -1,0 +1,6 @@
+4
+S03 Riverside 20 0 12
+S01 Central 24 11 35
+S04 University 18 7 35
+S02 Museum 16 4 19
+S04

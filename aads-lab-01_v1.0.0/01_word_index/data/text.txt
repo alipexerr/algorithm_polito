@@ -1,0 +1,3 @@
+Data moves through an array
+memory stores data and code
+ARRAY data MEMORY pointer

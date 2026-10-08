@@ -1,0 +1,32 @@
+Start testing: Oct 05 23:55 CEST
+----------------------------------------------------------
+1/1 Testing: bike_sharing_tests
+1/1 Test: bike_sharing_tests
+Command: "/Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/build/bike_sharing_tests"
+Directory: /Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report
+"bike_sharing_tests" start time: Oct 05 23:55 CEST
+Output:
+----------------------------------------------------------
+/Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/tests/test_station_report.c:221:test_load_snapshot_reads_complete_valid_snapshot:PASS
+/Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/tests/test_station_report.c:101:test_load_snapshot_duplicate_identifier_returns_failure:FAIL: Expected 0 Was 1
+/Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/tests/test_station_report.c:120:test_load_snapshot_too_many_available_bikes_returns_failure:FAIL: Expected 0 Was 1
+/Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/tests/test_station_report.c:224:test_load_snapshot_incomplete_record_returns_failure:PASS
+/Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/tests/test_station_report.c:159:test_load_snapshot_overlong_identifier_returns_failure:FAIL: Expected 0 Was 1
+/Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/tests/test_station_report.c:165:test_compute_totals_sums_all_station_values:FAIL: Expected 57 Was 0
+/Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/tests/test_station_report.c:173:test_find_station_returns_matching_station_or_null:FAIL: Expected Non-NULL
+/Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/tests/test_station_report.c:185:test_find_most_available_station_index_uses_identifier_tie_break:FAIL: Expected 2 Was -1
+/Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/tests/test_station_report.c:198:test_collect_zero_available_returns_indices_in_identifier_order:FAIL: Expected 2 Was 0
+/Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/tests/test_station_report.c:211:test_build_sorted_index_orders_view_without_modifying_stations:FAIL: Expected 2 Was 0
+
+-----------------------
+10 Tests 8 Failures 0 Ignored 
+FAIL
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"bike_sharing_tests" end time: Oct 05 23:55 CEST
+"bike_sharing_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 05 23:55 CEST

@@ -1,0 +1,5 @@
+3
+B Beta 10 5 20
+A Alpha 10 5 20
+C Gamma 10 1 2
+A

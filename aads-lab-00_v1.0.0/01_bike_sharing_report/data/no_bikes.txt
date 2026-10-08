@@ -1,0 +1,5 @@
+3
+C Gamma 8 0 1
+A Alpha 9 0 2
+B Beta 10 2 3
+missing
