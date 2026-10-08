@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/Users/ali/Desktop/algo/build",
+  "command": "/usr/bin/clang  -I/Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/src -g -std=gnu17 -arch arm64 -o CMakeFiles/station_report.dir/src/station_report.c.o -c /Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/src/station_report.c",
+  "file": "/Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/src/station_report.c",
+  "output": "CMakeFiles/station_report.dir/src/station_report.c.o"
+},
+{
+  "directory": "/Users/ali/Desktop/algo/build",
+  "command": "/usr/bin/clang  -I/Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/src -g -std=gnu17 -arch arm64 -o CMakeFiles/bike_sharing_report.dir/src/main.c.o -c /Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/src/main.c",
+  "file": "/Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/src/main.c",
+  "output": "CMakeFiles/bike_sharing_report.dir/src/main.c.o"
+},
+{
+  "directory": "/Users/ali/Desktop/algo/build",
+  "command": "/usr/bin/clang  -I/Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/tests/unity -g -std=gnu17 -arch arm64 -o CMakeFiles/unity.dir/tests/unity/unity.c.o -c /Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/tests/unity/unity.c",
+  "file": "/Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/tests/unity/unity.c",
+  "output": "CMakeFiles/unity.dir/tests/unity/unity.c.o"
+},
+{
+  "directory": "/Users/ali/Desktop/algo/build",
+  "command": "/usr/bin/clang  -I/Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/src -I/Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/tests/unity -g -std=gnu17 -arch arm64 -o CMakeFiles/bike_sharing_tests.dir/tests/test_station_report.c.o -c /Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/tests/test_station_report.c",
+  "file": "/Users/ali/Desktop/algo/aads-lab-00_v1.0.0/01_bike_sharing_report/tests/test_station_report.c",
+  "output": "CMakeFiles/bike_sharing_tests.dir/tests/test_station_report.c.o"
+}
+]

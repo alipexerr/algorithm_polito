@@ -1,0 +1,2 @@
+/usr/bin/ar qc libword_index_pointer_module.a CMakeFiles/word_index_pointer_module.dir/src/pointer_version/word_index.c.o
+/usr/bin/ranlib libword_index_pointer_module.a

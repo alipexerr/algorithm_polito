@@ -1,0 +1,7 @@
+/Users/ali/Desktop/algo/build/CMakeFiles/station_report.dir
+/Users/ali/Desktop/algo/build/CMakeFiles/bike_sharing_report.dir
+/Users/ali/Desktop/algo/build/CMakeFiles/unity.dir
+/Users/ali/Desktop/algo/build/CMakeFiles/bike_sharing_tests.dir
+/Users/ali/Desktop/algo/build/CMakeFiles/test.dir
+/Users/ali/Desktop/algo/build/CMakeFiles/edit_cache.dir
+/Users/ali/Desktop/algo/build/CMakeFiles/rebuild_cache.dir

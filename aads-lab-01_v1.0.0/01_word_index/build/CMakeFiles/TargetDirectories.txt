@@ -1,0 +1,10 @@
+/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/build/CMakeFiles/word_index_array_module.dir
+/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/build/CMakeFiles/word_index_array.dir
+/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/build/CMakeFiles/word_index_pointer_module.dir
+/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/build/CMakeFiles/word_index_pointer.dir
+/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/build/CMakeFiles/unity.dir
+/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/build/CMakeFiles/word_index_array_tests.dir
+/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/build/CMakeFiles/word_index_pointer_tests.dir
+/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/build/CMakeFiles/test.dir
+/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/build/CMakeFiles/edit_cache.dir
+/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/build/CMakeFiles/rebuild_cache.dir

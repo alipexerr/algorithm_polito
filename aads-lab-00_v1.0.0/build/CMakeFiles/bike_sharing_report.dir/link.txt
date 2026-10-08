@@ -1,0 +1,1 @@
+/usr/bin/clang -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/bike_sharing_report.dir/src/main.c.o -o bike_sharing_report  libstation_report.a

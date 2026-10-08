@@ -1,0 +1,2 @@
+/usr/bin/ar qc libword_index_array_module.a CMakeFiles/word_index_array_module.dir/src/array_version/word_index.c.o
+/usr/bin/ranlib libword_index_array_module.a

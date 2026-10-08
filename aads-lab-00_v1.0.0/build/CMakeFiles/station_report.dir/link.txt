@@ -1,0 +1,2 @@
+/usr/bin/ar qc libstation_report.a CMakeFiles/station_report.dir/src/station_report.c.o
+/usr/bin/ranlib libstation_report.a
