@@ -4,40 +4,57 @@
 #include <string.h>
 
 int load_seating_plan(FILE *input_file, SeatingPlan *seating_plan) {
-  /* TODO: validate, allocate, and load all physical rows. */
   if (seating_plan == NULL || input_file == NULL)
     return 0;
-  if (fscanf(input_file, "%d\n", &seating_plan->row_count) != 1 || seating_plan->row_count <= 0 || seating_plan->row_count > MAX_ROW_COUNT)
+
+  seating_plan->rows = NULL;
+  seating_plan->seat_states = NULL;
+  seating_plan->row_count = 0;
+
+  if (fscanf(input_file, "%d", &seating_plan->row_count) != 1 ||
+      seating_plan->row_count <= 0 || seating_plan->row_count > MAX_ROW_COUNT)
     return 0;
+
+  seating_plan->rows = malloc(sizeof(SeatRow) * seating_plan->row_count);
+  seating_plan->seat_states =
+      calloc(seating_plan->row_count, sizeof(SeatState *));
+  if (seating_plan->rows == NULL || seating_plan->seat_states == NULL)
+    goto failure;
 
   for (int i = 0; i < seating_plan->row_count; i++) {
     char row_label;
     int seat_count;
-    SeatRow *row;
-    SeatState **seat_states;
-    seat_states = malloc(sizeof(SeatState *) * seating_plan->row_count);
-    if (seat_states == NULL)
-      return 0;
-    if (fscanf(input_file, "%c %d\n", &row_label, &seat_count) != 2 || seat_count <= 0 || seat_count > MAX_SEAT_COUNT)
-      return 0;
-    (*row).label = row_label;
-    (*row).seat_count = seat_count;
-    seating_plan->rows[i] = *row;
-    *seat_states = malloc(sizeof(SeatState) * seat_count);
-    if (*seat_states == NULL)
-      return 0;
+    if (fscanf(input_file, "%c %d", &row_label, &seat_count) != 2 ||
+        seat_count <= 0 || seat_count > MAX_SEAT_COUNT)
+      goto failure;
+
+    seating_plan->rows[i].label = row_label;
+    seating_plan->rows[i].seat_count = seat_count;
+    seating_plan->seat_states[i] = malloc(sizeof(SeatState) * seat_count);
+    if (seating_plan->seat_states[i] == NULL)
+      goto failure;
+
     for (int j = 0; j < seat_count; j++) {
-      int seat_state;
-      SeatState state;
-      if (fscanf(input_file, "%d", &seat_state) != 1)
-        return 0;
-      state = (SeatState)seat_state;
-      (*seat_states)[j] = state;
+      int state;
+      if (fscanf(input_file, "%d", &state) != 1 ||
+          (state != SEAT_AVAILABLE && state != SEAT_OCCUPIED))
+        goto failure;
+      seating_plan->seat_states[i][j] = (SeatState)state;
     }
-    seating_plan->seat_states = seat_states;
-    return 1;
   }
 
+  return 1;
+
+failure:
+  if (seating_plan->seat_states != NULL) {
+    for (int i = 0; i < seating_plan->row_count; i++)
+      free(seating_plan->seat_states[i]);
+  }
+  free(seating_plan->seat_states);
+  free(seating_plan->rows);
+  seating_plan->rows = NULL;
+  seating_plan->seat_states = NULL;
+  seating_plan->row_count = 0;
   return 0;
 }
 
