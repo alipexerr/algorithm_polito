@@ -24,19 +24,39 @@ enable_testing()
 add_library(unity STATIC tests/unity/unity.c)
 target_include_directories(unity PUBLIC tests/unity)
 
+if(APPLE)
+    set(ALLOCATION_TRACKER_SOURCE
+        "${CMAKE_CURRENT_SOURCE_DIR}/tests/support/allocation_tracker_macos.c"
+    )
+    target_compile_options(auditorium_seating_modules PRIVATE
+        -include
+        "${CMAKE_CURRENT_SOURCE_DIR}/tests/support/allocation_tracker_macos.h"
+    )
+elseif(CMAKE_SYSTEM_NAME STREQUAL "Linux")
+    set(ALLOCATION_TRACKER_SOURCE
+        "${CMAKE_CURRENT_SOURCE_DIR}/tests/support/allocation_tracker.c"
+    )
+else()
+    message(FATAL_ERROR
+        "Unsupported operating system for allocation tracking: ${CMAKE_SYSTEM_NAME}"
+    )
+endif()
+
 add_executable(auditorium_seating_tests
     tests/test_seating_plan.c
-    tests/support/allocation_tracker.c
+    ${ALLOCATION_TRACKER_SOURCE}
 )
 target_include_directories(auditorium_seating_tests PRIVATE src tests)
 target_link_libraries(auditorium_seating_tests PRIVATE
     unity
     auditorium_seating_modules
 )
-target_link_options(auditorium_seating_tests PRIVATE
-    -Wl,--wrap=malloc -Wl,--wrap=calloc -Wl,--wrap=realloc
-    -Wl,--wrap=free -Wl,--wrap=strdup
-)
+if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
+    target_link_options(auditorium_seating_tests PRIVATE
+        -Wl,--wrap=malloc -Wl,--wrap=calloc -Wl,--wrap=realloc
+        -Wl,--wrap=free -Wl,--wrap=strdup
+    )
+endif()
 
 add_test(
     NAME auditorium_seating_tests

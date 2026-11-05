@@ -24,19 +24,39 @@ enable_testing()
 add_library(unity STATIC tests/unity/unity.c)
 target_include_directories(unity PUBLIC tests/unity)
 
+if(APPLE)
+    set(ALLOCATION_TRACKER_SOURCE
+        "${CMAKE_CURRENT_SOURCE_DIR}/tests/support/allocation_tracker_macos.c"
+    )
+    target_compile_options(task_planner_modules PRIVATE
+        -include
+        "${CMAKE_CURRENT_SOURCE_DIR}/tests/support/allocation_tracker_macos.h"
+    )
+elseif(CMAKE_SYSTEM_NAME STREQUAL "Linux")
+    set(ALLOCATION_TRACKER_SOURCE
+        "${CMAKE_CURRENT_SOURCE_DIR}/tests/support/allocation_tracker.c"
+    )
+else()
+    message(FATAL_ERROR
+        "Unsupported operating system for allocation tracking: ${CMAKE_SYSTEM_NAME}"
+    )
+endif()
+
 add_executable(task_planner_tests
     tests/test_task_planner.c
-    tests/support/allocation_tracker.c
+    ${ALLOCATION_TRACKER_SOURCE}
 )
 target_include_directories(task_planner_tests PRIVATE src tests)
 target_link_libraries(task_planner_tests PRIVATE
     unity
     task_planner_modules
 )
-target_link_options(task_planner_tests PRIVATE
-    -Wl,--wrap=malloc -Wl,--wrap=calloc -Wl,--wrap=realloc
-    -Wl,--wrap=free -Wl,--wrap=strdup
-)
+if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
+    target_link_options(task_planner_tests PRIVATE
+        -Wl,--wrap=malloc -Wl,--wrap=calloc -Wl,--wrap=realloc
+        -Wl,--wrap=free -Wl,--wrap=strdup
+    )
+endif()
 
 add_test(
     NAME task_planner_tests
