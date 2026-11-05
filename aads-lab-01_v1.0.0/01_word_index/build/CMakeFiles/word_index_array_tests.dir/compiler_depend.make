@@ -72,7 +72,7 @@ CMakeFiles/word_index_array_tests.dir/tests/array_version/test_word_index.c.o: /
   /Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/unity/unity.h \
   /Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/unity/unity_internals.h
 
-CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker.c.o: /Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/support/allocation_tracker.c \
+CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker_macos.c.o: /Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/support/allocation_tracker_macos.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h \
@@ -297,6 +297,8 @@ CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker.c.o: /Use
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int32_t.h:
 
+/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/support/allocation_tracker_macos.c:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/resource.h:
@@ -380,8 +382,6 @@ CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker.c.o: /Use
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:
-
-/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/support/allocation_tracker.c:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ct_rune_t.h:
 

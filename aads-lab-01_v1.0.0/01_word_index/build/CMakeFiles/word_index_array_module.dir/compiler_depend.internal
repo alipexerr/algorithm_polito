@@ -10,6 +10,7 @@ CMakeFiles/word_index_array_module.dir/src/array_version/word_index.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_abort.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h
@@ -29,6 +30,7 @@ CMakeFiles/word_index_array_module.dir/src/array_version/word_index.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/endian.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/signal.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ctype.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/_OSByteOrder.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/arm/_OSByteOrder.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/arm/_structs.h
@@ -42,10 +44,12 @@ CMakeFiles/word_index_array_module.dir/src/array_version/word_index.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc_type.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_ptrcheck.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/runetype.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_common.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_strings.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stddef.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdlib.h
@@ -87,13 +91,23 @@ CMakeFiles/word_index_array_module.dir/src/array_version/word_index.c.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_va_list.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wchar_t.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wint_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/appleapiopts.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/resource.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/signal.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/wait.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stddef_header_macro.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stddef_max_align_t.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stddef_null.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stddef_offsetof.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stddef_ptrdiff_t.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stddef_size_t.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/21/include/__stddef_wchar_t.h
  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/ptrcheck.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/21/include/stddef.h
  /Library/Developer/CommandLineTools/usr/lib/clang/21/include/stdint.h
  /Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/src/array_version/word_index.h
+ /Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/support/allocation_tracker_macos.h
 

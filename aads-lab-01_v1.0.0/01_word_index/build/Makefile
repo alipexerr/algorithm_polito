@@ -141,19 +141,6 @@ word_index_array_module/fast:
 .PHONY : word_index_array_module/fast
 
 #=============================================================================
-# Target rules for targets named word_index_array
-
-# Build rule for target.
-word_index_array: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 word_index_array
-.PHONY : word_index_array
-
-# fast build rule for target.
-word_index_array/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index_array.dir/build.make CMakeFiles/word_index_array.dir/build
-.PHONY : word_index_array/fast
-
-#=============================================================================
 # Target rules for targets named word_index_pointer_module
 
 # Build rule for target.
@@ -165,6 +152,19 @@ word_index_pointer_module: cmake_check_build_system
 word_index_pointer_module/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index_pointer_module.dir/build.make CMakeFiles/word_index_pointer_module.dir/build
 .PHONY : word_index_pointer_module/fast
+
+#=============================================================================
+# Target rules for targets named word_index
+
+# Build rule for target.
+word_index: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 word_index
+.PHONY : word_index
+
+# fast build rule for target.
+word_index/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index.dir/build.make CMakeFiles/word_index.dir/build
+.PHONY : word_index/fast
 
 #=============================================================================
 # Target rules for targets named word_index_pointer
@@ -223,7 +223,7 @@ src/array_version/main.o: src/array_version/main.c.o
 
 # target to build an object file
 src/array_version/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index_array.dir/build.make CMakeFiles/word_index_array.dir/src/array_version/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index.dir/build.make CMakeFiles/word_index.dir/src/array_version/main.c.o
 .PHONY : src/array_version/main.c.o
 
 src/array_version/main.i: src/array_version/main.c.i
@@ -231,7 +231,7 @@ src/array_version/main.i: src/array_version/main.c.i
 
 # target to preprocess a source file
 src/array_version/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index_array.dir/build.make CMakeFiles/word_index_array.dir/src/array_version/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index.dir/build.make CMakeFiles/word_index.dir/src/array_version/main.c.i
 .PHONY : src/array_version/main.c.i
 
 src/array_version/main.s: src/array_version/main.c.s
@@ -239,7 +239,7 @@ src/array_version/main.s: src/array_version/main.c.s
 
 # target to generate assembly for a file
 src/array_version/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index_array.dir/build.make CMakeFiles/word_index_array.dir/src/array_version/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index.dir/build.make CMakeFiles/word_index.dir/src/array_version/main.c.s
 .PHONY : src/array_version/main.c.s
 
 src/array_version/word_index.o: src/array_version/word_index.c.o
@@ -362,32 +362,32 @@ tests/pointer_version/test_word_index.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index_pointer_tests.dir/build.make CMakeFiles/word_index_pointer_tests.dir/tests/pointer_version/test_word_index.c.s
 .PHONY : tests/pointer_version/test_word_index.c.s
 
-tests/support/allocation_tracker.o: tests/support/allocation_tracker.c.o
-.PHONY : tests/support/allocation_tracker.o
+tests/support/allocation_tracker_macos.o: tests/support/allocation_tracker_macos.c.o
+.PHONY : tests/support/allocation_tracker_macos.o
 
 # target to build an object file
-tests/support/allocation_tracker.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index_array_tests.dir/build.make CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index_pointer_tests.dir/build.make CMakeFiles/word_index_pointer_tests.dir/tests/support/allocation_tracker.c.o
-.PHONY : tests/support/allocation_tracker.c.o
+tests/support/allocation_tracker_macos.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index_array_tests.dir/build.make CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker_macos.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index_pointer_tests.dir/build.make CMakeFiles/word_index_pointer_tests.dir/tests/support/allocation_tracker_macos.c.o
+.PHONY : tests/support/allocation_tracker_macos.c.o
 
-tests/support/allocation_tracker.i: tests/support/allocation_tracker.c.i
-.PHONY : tests/support/allocation_tracker.i
+tests/support/allocation_tracker_macos.i: tests/support/allocation_tracker_macos.c.i
+.PHONY : tests/support/allocation_tracker_macos.i
 
 # target to preprocess a source file
-tests/support/allocation_tracker.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index_array_tests.dir/build.make CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index_pointer_tests.dir/build.make CMakeFiles/word_index_pointer_tests.dir/tests/support/allocation_tracker.c.i
-.PHONY : tests/support/allocation_tracker.c.i
+tests/support/allocation_tracker_macos.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index_array_tests.dir/build.make CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker_macos.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index_pointer_tests.dir/build.make CMakeFiles/word_index_pointer_tests.dir/tests/support/allocation_tracker_macos.c.i
+.PHONY : tests/support/allocation_tracker_macos.c.i
 
-tests/support/allocation_tracker.s: tests/support/allocation_tracker.c.s
-.PHONY : tests/support/allocation_tracker.s
+tests/support/allocation_tracker_macos.s: tests/support/allocation_tracker_macos.c.s
+.PHONY : tests/support/allocation_tracker_macos.s
 
 # target to generate assembly for a file
-tests/support/allocation_tracker.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index_array_tests.dir/build.make CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index_pointer_tests.dir/build.make CMakeFiles/word_index_pointer_tests.dir/tests/support/allocation_tracker.c.s
-.PHONY : tests/support/allocation_tracker.c.s
+tests/support/allocation_tracker_macos.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index_array_tests.dir/build.make CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker_macos.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/word_index_pointer_tests.dir/build.make CMakeFiles/word_index_pointer_tests.dir/tests/support/allocation_tracker_macos.c.s
+.PHONY : tests/support/allocation_tracker_macos.c.s
 
 tests/unity/unity.o: tests/unity/unity.c.o
 .PHONY : tests/unity/unity.o
@@ -423,7 +423,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... unity"
-	@echo "... word_index_array"
+	@echo "... word_index"
 	@echo "... word_index_array_module"
 	@echo "... word_index_array_tests"
 	@echo "... word_index_pointer"
@@ -447,9 +447,9 @@ help:
 	@echo "... tests/pointer_version/test_word_index.o"
 	@echo "... tests/pointer_version/test_word_index.i"
 	@echo "... tests/pointer_version/test_word_index.s"
-	@echo "... tests/support/allocation_tracker.o"
-	@echo "... tests/support/allocation_tracker.i"
-	@echo "... tests/support/allocation_tracker.s"
+	@echo "... tests/support/allocation_tracker_macos.o"
+	@echo "... tests/support/allocation_tracker_macos.i"
+	@echo "... tests/support/allocation_tracker_macos.s"
 	@echo "... tests/unity/unity.o"
 	@echo "... tests/unity/unity.i"
 	@echo "... tests/unity/unity.s"

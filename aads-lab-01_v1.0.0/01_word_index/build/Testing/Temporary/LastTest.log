@@ -1,0 +1,51 @@
+Start testing: Nov 05 14:49 CET
+----------------------------------------------------------
+1/2 Testing: word_index_array_tests
+1/2 Test: word_index_array_tests
+Command: "/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/build/word_index_array_tests"
+Directory: /Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index
+"word_index_array_tests" start time: Nov 05 14:49 CET
+Output:
+----------------------------------------------------------
+/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/array_version/test_word_index.c:95:test_load_word_index_array_with_words_preserves_data_and_clears_counts:PASS
+/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/array_version/test_word_index.c:97:test_find_word_array_with_case_variations_returns_matching_indexes:PASS
+/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/array_version/test_word_index.c:98:test_count_words_array_with_mixed_words_updates_known_counts:PASS
+/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/array_version/test_word_index.c:99:test_count_words_array_with_empty_text_keeps_zero_counts:PASS
+/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/array_version/test_word_index.c:100:test_destroy_word_index_array_releases_memory_and_accepts_null:PASS
+
+-----------------------
+5 Tests 0 Failures 0 Ignored 
+OK
+<end of output>
+Test time =   0.52 sec
+----------------------------------------------------------
+Test Passed.
+"word_index_array_tests" end time: Nov 05 14:50 CET
+"word_index_array_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: word_index_pointer_tests
+2/2 Test: word_index_pointer_tests
+Command: "/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/build/word_index_pointer_tests"
+Directory: /Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index
+"word_index_pointer_tests" start time: Nov 05 14:50 CET
+Output:
+----------------------------------------------------------
+/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/pointer_version/test_word_index.c:105:test_load_word_index_pointer_with_words_owns_data_and_clears_counts:PASS
+/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/pointer_version/test_word_index.c:107:test_find_word_pointer_with_case_variations_returns_matching_indexes:PASS
+/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/pointer_version/test_word_index.c:108:test_count_words_pointer_with_mixed_words_updates_known_counts:PASS
+/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/pointer_version/test_word_index.c:109:test_count_words_pointer_with_empty_text_keeps_zero_counts:PASS
+/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/pointer_version/test_word_index.c:110:test_destroy_word_index_pointer_releases_memory_and_accepts_null:PASS
+
+-----------------------
+5 Tests 0 Failures 0 Ignored 
+OK
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"word_index_pointer_tests" end time: Nov 05 14:50 CET
+"word_index_pointer_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 05 14:50 CET

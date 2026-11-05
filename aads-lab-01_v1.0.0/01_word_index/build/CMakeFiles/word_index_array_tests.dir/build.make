@@ -86,30 +86,30 @@ CMakeFiles/word_index_array_tests.dir/tests/array_version/test_word_index.c.s: c
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/word_index_array_tests.dir/tests/array_version/test_word_index.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/array_version/test_word_index.c -o CMakeFiles/word_index_array_tests.dir/tests/array_version/test_word_index.c.s
 
-CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker.c.o: CMakeFiles/word_index_array_tests.dir/flags.make
-CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker.c.o: /Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/support/allocation_tracker.c
-CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker.c.o: CMakeFiles/word_index_array_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker.c.o -MF CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker.c.o.d -o CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker.c.o -c /Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/support/allocation_tracker.c
+CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker_macos.c.o: CMakeFiles/word_index_array_tests.dir/flags.make
+CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker_macos.c.o: /Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/support/allocation_tracker_macos.c
+CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker_macos.c.o: CMakeFiles/word_index_array_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker_macos.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker_macos.c.o -MF CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker_macos.c.o.d -o CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker_macos.c.o -c /Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/support/allocation_tracker_macos.c
 
-CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/support/allocation_tracker.c > CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker.c.i
+CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker_macos.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker_macos.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/support/allocation_tracker_macos.c > CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker_macos.c.i
 
-CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/support/allocation_tracker.c -o CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker.c.s
+CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker_macos.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker_macos.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/support/allocation_tracker_macos.c -o CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker_macos.c.s
 
 # Object files for target word_index_array_tests
 word_index_array_tests_OBJECTS = \
 "CMakeFiles/word_index_array_tests.dir/tests/array_version/test_word_index.c.o" \
-"CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker.c.o"
+"CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker_macos.c.o"
 
 # External object files for target word_index_array_tests
 word_index_array_tests_EXTERNAL_OBJECTS =
 
 word_index_array_tests: CMakeFiles/word_index_array_tests.dir/tests/array_version/test_word_index.c.o
-word_index_array_tests: CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker.c.o
+word_index_array_tests: CMakeFiles/word_index_array_tests.dir/tests/support/allocation_tracker_macos.c.o
 word_index_array_tests: CMakeFiles/word_index_array_tests.dir/build.make
 word_index_array_tests: libunity.a
 word_index_array_tests: libword_index_array_module.a

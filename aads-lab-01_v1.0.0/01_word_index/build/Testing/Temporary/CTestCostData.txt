@@ -1,0 +1,3 @@
+word_index_array_tests 4 0.130276
+word_index_pointer_tests 1 0.160492
+---

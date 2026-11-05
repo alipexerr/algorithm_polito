@@ -1,0 +1,3 @@
+T20 20261005 publish_results
+T03 20261005 collect_reports
+T11 20261005 verify_submissions

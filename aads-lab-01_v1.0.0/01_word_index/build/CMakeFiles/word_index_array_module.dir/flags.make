@@ -6,7 +6,7 @@ C_DEFINES =
 
 C_INCLUDES = -I/Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/src/array_version
 
-C_FLAGSarm64 = -std=gnu17 -arch arm64
+C_FLAGSarm64 = -std=gnu17 -arch arm64 -include /Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/support/allocation_tracker_macos.h
 
-C_FLAGS = -std=gnu17 -arch arm64
+C_FLAGS = -std=gnu17 -arch arm64 -include /Users/ali/Desktop/algo/algorithm_labs/algorithm_polito/aads-lab-01_v1.0.0/01_word_index/tests/support/allocation_tracker_macos.h
 

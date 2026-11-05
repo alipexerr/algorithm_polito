@@ -1,0 +1,1 @@
+/usr/bin/cc  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/word_index.dir/src/array_version/main.c.o -o word_index  libword_index_array_module.a
