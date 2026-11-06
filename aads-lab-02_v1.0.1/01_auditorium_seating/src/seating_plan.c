@@ -7,10 +7,6 @@ int load_seating_plan(FILE *input_file, SeatingPlan *seating_plan) {
   if (seating_plan == NULL || input_file == NULL)
     return 0;
 
-  seating_plan->rows = NULL;
-  seating_plan->seat_states = NULL;
-  seating_plan->row_count = 0;
-
   if (fscanf(input_file, "%d", &seating_plan->row_count) != 1 ||
       seating_plan->row_count <= 0 || seating_plan->row_count > MAX_ROW_COUNT)
     return 0;
@@ -24,7 +20,7 @@ int load_seating_plan(FILE *input_file, SeatingPlan *seating_plan) {
   for (int i = 0; i < seating_plan->row_count; i++) {
     char row_label;
     int seat_count;
-    if (fscanf(input_file, "%c %d", &row_label, &seat_count) != 2 ||
+    if (fscanf(input_file, " %c %d", &row_label, &seat_count) != 2 ||
         seat_count <= 0 || seat_count > MAX_SEAT_COUNT)
       goto failure;
 
